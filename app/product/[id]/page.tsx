@@ -12,12 +12,12 @@ export default async function Page({ params }: { params: Product }) {
   /* const product: Product = mockProducts.find((prod) => prod.id === id)
     ? mockProducts.filter((prod) => prod.id == id)[0]
     : mockProducts[0];
-    */
+  */
 
   return (
     <div>
       <ProductInfo product={product} />
-      <div className="flex justify-center">
+      <div className="flex justify-center pb-4">
         <Link href={"/"}>
           <button className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-l">
             Vissza
@@ -38,9 +38,8 @@ export async function generateStaticParams() {
     id: product.id.toString(),
   }));
 
-  /*
-  return mockProducts.map((product) => ({
-    id: product.id.toString(),
-  }));
+  /* return mockProducts.map((product) => ({
+      id: product.id.toString(),
+     }));
   */
 }
