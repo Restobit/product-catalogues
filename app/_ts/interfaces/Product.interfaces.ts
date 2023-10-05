@@ -10,5 +10,4 @@ export interface Product {
 
 interface Rating {
   rate: number;
-  count: number;
 }
